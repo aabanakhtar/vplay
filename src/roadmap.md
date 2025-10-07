@@ -1,5 +1,7 @@
 # CLI Video Editor Roadmap
 
+sudo apt install libavcodec-dev libavformat-dev libavutil-dev libswscale-dev libavdevice-dev
+
 ## Phase 0: Prerequisites
 
 * Install FFmpeg development libraries

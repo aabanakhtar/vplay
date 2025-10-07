@@ -1,0 +1,27 @@
+# CLion & CMake
+cmake-build-*/
+cmake-build*/
+build/
+CMakeFiles/
+CMakeCache.txt
+Makefile
+cmake_install.cmake
+compile_commands.json
+
+# CLion project files
+.idea/
+*.iml
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Executables and object files
+*.exe
+*.out
+*.o
+*.obj
+*.so
+*.a
+*.dll
+*.dylib
