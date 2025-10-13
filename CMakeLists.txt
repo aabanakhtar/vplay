@@ -6,6 +6,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 find_package(PkgConfig REQUIRED)
+find_package(SDL2 REQUIRED)
 
 pkg_check_modules(LIBAV REQUIRED IMPORTED_TARGET
     libavdevice
