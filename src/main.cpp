@@ -2,12 +2,12 @@
 // Created by aabanakhtar on 9/29/25.
 //
 #include <iostream>
-#include <SDL3/SDL.h>
 
 extern "C" {
     #include <libavcodec/avcodec.h>
     #include <libavformat/avformat.h>
 }
+
 
 int main(int argc, char* argv[])
 {
@@ -55,9 +55,6 @@ int main(int argc, char* argv[])
 
         while (av_read_frame(video_fmt_ctx, packet) >= 0)
         {
-            avcodec_send_packet(coding_ctx, packet); 
-            avcodec_receive_frame(coding_ctx, frame); 
-
         }
 
         av_packet_free(&packet); 

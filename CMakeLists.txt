@@ -20,6 +20,7 @@ pkg_check_modules(LIBAV REQUIRED IMPORTED_TARGET
 
 set(SRCs
     src/main.cpp
+    src/window.cpp
 )
 
 add_executable(${PROJECT_NAME} ${SRCs})
@@ -30,4 +31,5 @@ target_include_directories(${PROJECT_NAME} PRIVATE
 
 target_link_libraries(${PROJECT_NAME}
     PkgConfig::LIBAV
+    SDL2::SDL2
 )
