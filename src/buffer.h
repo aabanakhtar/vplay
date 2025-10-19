@@ -21,8 +21,9 @@ namespace Buffer
 
     };
 
-    struct Video 
+    class Video 
     {
+    public:
         static std::optional<Video> create_from(const std::string file_path);
 
         std::string vid_name; 
@@ -35,6 +36,8 @@ namespace Buffer
 
         // note: frame is MOVED
         void add_vframe(VideoFrame&& frame);
+    
+    private:
     };
 };
 

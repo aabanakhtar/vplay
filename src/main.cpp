@@ -11,6 +11,8 @@ extern "C" {
 
 int main(int argc, char* argv[])
 {
+    av_register_all();
+
     std::string filename = "vid.mp4";
     AVFormatContext* video_fmt_ctx = avformat_alloc_context();
     if (video_fmt_ctx == nullptr)

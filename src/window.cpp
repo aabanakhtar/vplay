@@ -5,7 +5,6 @@
 Playback::Window::Window(std::string name, int w, int h)
     : w(w), h(h), name(std::move(name)), win(nullptr), renderer(nullptr)
 {
-
 }
 
 bool Playback::Window::init() 
